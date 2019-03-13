@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Feeder chủ lực của f1a
+Dự bị chiến lược z3r0_n1ght
+
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Mình mới tập chơi CTF mảng web và forensic mong mọi người chỉ bảo thêm
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[khoabda305@gmail.com](mailto:khoabda305@gmail.com)
