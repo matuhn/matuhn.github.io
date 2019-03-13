@@ -6,7 +6,7 @@ permalink: /about/
 
 Feeder chủ lực của f1a
 
-Dự bị chiến lược z3r0_n1ght
+Dự bị chiến lược của z3r0_n1ght
 
 
 ### More Information
