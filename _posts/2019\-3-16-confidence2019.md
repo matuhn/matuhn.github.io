@@ -8,7 +8,7 @@ Giải do team p4 tổ chức, có khá nhiều bài hay :))) Nhưng là mới c
 
 ![alt text](https://raw.githubusercontent.com/matuhn/matuhn.github.io/master/images/con1.png "CONFidence CTF 2019")
 
-# My admin panel (Web)
+# My admin panel (WEB)
 [Link Challenge](https://gameserver.zajebistyc.tf/admin/)
 
 Vào challenge mình thấy có ngay 2 file là login.php và login.php.bak (File Backup)
@@ -106,3 +106,123 @@ for i in range(1,999):
 ```
 
 Flag : `p4{wtf_php_comparisons_how_do_they_work}`
+
+# Sloik (MISC)
+
+```
+nc sloik.zajebistyc.tf 30001
+```
+Cho 2 file source, 1 file py, 1 file jar
+
+Source Python:
+
+```python
+import os
+import shutil
+import signal
+import subprocess
+import sys
+
+cwd = os.getcwd()
+sandbox_name = ''
+
+
+def cleanup(a, b):
+    global sandbox_name
+    if sandbox_name != '':
+        sandbox_path = os.path.join(cwd, sandbox_name)
+        if os.path.exists(sandbox_path):
+            shutil.rmtree(sandbox_path)
+
+
+def main():
+    global sandbox_name
+    signal.signal(signal.SIGALRM, cleanup)
+    signal.alarm(10)
+
+    print "username: ",
+    sys.stdout.flush()
+    sandbox_name = sys.stdin.readline().strip()
+    sandbox_path = os.path.join(cwd, "sandbox", os.path.basename(sandbox_name))
+
+    if os.path.exists(sandbox_path):
+        print "Sorry, this name is taken"
+        exit(1)
+    else:
+        os.mkdir(sandbox_path)
+        java_app = 'sloik-1.0-SNAPSHOT-jar-with-dependencies.jar'
+        shutil.copy(java_app, sandbox_path)
+        flag_data = open('flag.txt','r').read()
+        os.chdir(sandbox_path)
+        subprocess.call(['java', '-Xmx8m', '-jar', java_app], stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr, env={'flag': flag_data})
+    os.chdir("../")
+    cleanup("","")
+
+
+main()
+```
+
+Source Java:
+
+```java
+/* 
+ * Decompiled with CFR 0.140.
+ */
+package team.p4.sloik;
+
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.util.Properties;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {      
+        Properties properties = new Properties(); 
+        try {
+            InputStream stream = Main.class.getResourceAsStream("/application.properties"); 
+            properties.load(stream);
+        }
+        catch (Exception e) {
+            properties.put("password", "default");
+        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Password:");
+        String password = sc.nextLine();
+        if (password.equals(properties.get("password"))) {
+            System.out.println("Welcome admin, flag is: " + System.getenv("flag")); 
+        }
+    }
+}
+```
+
+À, bài này nó cho file jar để đọc Code file jar thì mình xài [CFR](https://www.benf.org/other/cfr/)
+
+ok nhìn vào thì khi nc tới server của nó, nó sẽ bắt mình nhập 2 thông tin là username và password
+Username khi mình nhập vào nó sẽ dùng để tạo 1 folder ở server của nó, rồi copy cái file jar trên vào rồi check tiếp 
+Nhìn qua file java thì nếu password trùng với password trong file config của nó thì ra flag 
+
+```java
+try {
+            InputStream stream = Main.class.getResourceAsStream("/application.properties"); 
+            properties.load(stream);
+        }
+        catch (Exception e) {
+            properties.put("password", "default");
+        }
+```
+
+Nhưng mà cái ở đây mình để ý là phần catch Exception, thầy dạy Java của mình ở trường đã bảo là khi code có vô số trường hợp xảy ra mà người lập trình không thể dự tính trước được thì sẽ catch lại bằng cái Exception 
+
+Sẽ không có vấn đề gì với cái code này nếu người ra đề không phải là team p4
+Thử Google 1 chút với keyword `getResourceAsStream jar throw exception report bug java` thì tìm dc [Link](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=4523159) này 
+Đại loại bug này là nếu mình thêm `!` vào sau cái tên directory thì khi `getResourceAsStream` parse vào sẽ quăng Exception 
+Nếu bị quăng Exception thì sao? password sẽ được set thành `default` 
+```
+matuhn@SE130149:/mnt/d/ctf/tool/jd-gui$ nc sloik.zajebistyc.tf 30001
+username: z3r0_n1ght!
+Password:
+default
+Welcome admin, flag is: p4{fire_exclamation_mark_fire_exclamation_mark}
+```
+
+
