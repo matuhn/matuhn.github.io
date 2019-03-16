@@ -3,7 +3,7 @@ layout: post
 title: CONFidence CTF 2019 Teaser
 ---
 # CONFidence CTF 2019 Teaser
-Giải do team p4 tổ chức, có khá nhiều bài hay :))) Nhưng là mới chỉ là Teaser thôi nên mình vẫn chưa ngập hành. 
+Giải do team p4 tổ chức, và tất nhiên là rất chất lượng. Nhưng là mới chỉ là Teaser thôi nên mình vẫn chưa ngập hành. 
 
 
 ![alt text](https://raw.githubusercontent.com/matuhn/matuhn.github.io/master/images/con1.png "CONFidence CTF 2019")
@@ -214,7 +214,7 @@ try {
 Nhưng mà cái ở đây mình để ý là phần catch Exception, thầy dạy Java của mình ở trường đã bảo là khi code có vô số trường hợp xảy ra mà người lập trình không thể dự tính trước được thì sẽ catch lại bằng cái Exception 
 
 Sẽ không có vấn đề gì với cái code này nếu người ra đề không phải là team p4
-Thử Google 1 chút với keyword `getResourceAsStream jar throw exception report bug java` thì tìm dc [Link](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=4523159) này 
+Thử Google 1 chút với keyword `getResourceAsStream jar throw exception report bug java` thì tìm dc [Link](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=4523159) này, do team p4 report luôn
 Đại loại bug này là nếu mình thêm `!` vào sau cái tên directory thì khi `getResourceAsStream` parse vào sẽ quăng Exception 
 Nếu bị quăng Exception thì sao? password sẽ được set thành `default` 
 ```
