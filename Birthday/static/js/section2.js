@@ -2599,21 +2599,20 @@
     },
     function(e, t) {
         e.exports =
-            // Chỉnh sửa nội dung (phần chữ trước và sau ảnh). Không nên chỉnh sửa field fileName để tránh lỗi
             [{
                     fileName: "1.jpg",
-                    title: "Trái tim của chủ chanh nhỏ",
-                    desc: "Tư duy và tình yêu cuộc sống, lạc quan và rộng lượng. Hi, mục tiêu lớn, rất sớm bởi thái độ của bạn về cuộc sống bị nhiễm Yo"
+                    title: "Hình còn nhỏ nè (click vào từng hình nha)",
+                    desc: "Lúc này còn nhỏ nhìn siu cưng nè <3"
                 },
                 {
                     fileName: "1-1.jpg",
-                    title: "Hổ bắt nguồn từ núi",
-                    desc: "Little chanh là wingman của tôi Yeah, sau nhiều hơn để nhìn thấy nó một chút"
+                    title: "Giờ lơn rồi bị Khoa bắt rồi nè",
+                    desc: "Không bao giờ chụp dc tấm hình đàng hoàng :/"
                 },
                 {
                     fileName: "2.jpg",
-                    title: "Đĩa đơn đầu tiên ăn",
-                    desc: "Quốc khánh bảy ngày, mỗi ngày cơ bản và bạn chia sẻ kinh nghiệm của họ, và nhìn thấy bạn, trái tim tôi ấm."
+                    title: "Bị FPT dụ đi tham quan trường nè",
+                    desc: "Còn tính học chung với anh nhưng rốt cuộc học Kinh Tế :)))"
                 },
                 {
                     fileName: "3.jpg",
@@ -6906,7 +6905,6 @@
             imageDataArray: c
         }), document.getElementById("content"))
     },
-    // Chỉnh sửa ảnh ở đây. Thư mục chỉnh sửa là static/media, các bạn nên copy đúng filename rồi ghi đè vào
     function(e, t) {},
     163,
     function(e, t, n) {
@@ -6919,31 +6917,31 @@
         e.exports = n.p + "static/media/10.903aae48.jpg"
     },
     function(e, t, n) {
-        e.exports = n.p + "static/media/11.c3635477.jpg"
+        e.exports = n.p + "static/media/11.c3635477.jpeg"
     },
     function(e, t, n) {
-        e.exports = n.p + "static/media/2.863ca412.jpg"
+        e.exports = n.p + "static/media/2.863ca412.jpeg"
     },
     function(e, t, n) {
-        e.exports = n.p + "static/media/3.6b1a0e23.jpg"
+        e.exports = n.p + "static/media/3.6b1a0e23.jpeg"
     },
     function(e, t, n) {
-        e.exports = n.p + "static/media/4.5f2febaf.jpg"
+        e.exports = n.p + "static/media/4.5f2febaf.jpeg"
     },
     function(e, t, n) {
-        e.exports = n.p + "static/media/5.61e0c7f0.jpg"
+        e.exports = n.p + "static/media/5.61e0c7f0.jpeg"
     },
     function(e, t, n) {
-        e.exports = n.p + "static/media/6.e1fcb6c1.jpg"
+        e.exports = n.p + "static/media/6.e1fcb6c1.jpeg"
     },
     function(e, t, n) {
-        e.exports = n.p + "static/media/7.fd63646c.jpg"
+        e.exports = n.p + "static/media/7.fd63646c.jpeg"
     },
     function(e, t, n) {
-        e.exports = n.p + "static/media/8.e033124f.jpg"
+        e.exports = n.p + "static/media/8.e033124f.jpeg"
     },
     function(e, t, n) {
-        e.exports = n.p + "static/media/9.459dd10f.jpg"
+        e.exports = n.p + "static/media/9.459dd10f.jpeg"
     },
     function(e, t, n) {
         "use strict";
