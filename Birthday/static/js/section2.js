@@ -2606,7 +2606,7 @@
                 },
                 {
                     fileName: "1-1.jpg",
-                    title: "Giờ lơn rồi bị Khoa bắt rồi nè",
+                    title: "Giờ lớn rồi bị Khoa bắt rồi nè",
                     desc: "Không bao giờ chụp dc tấm hình đàng hoàng :/"
                 },
                 {
@@ -2616,46 +2616,46 @@
                 },
                 {
                     fileName: "3.jpg",
-                    title: "Nào, Xunliao Bay",
-                    desc: "Một lần nữa, hành động của phi hành đoàn, cuộc hành trình là rất hạnh phúc, thấy bạn cũng chơi rất hạnh phúc, nó cảm thấy gần với đẹp. Rất tiếc, quên những ngày con vịt của cha tôi"
+                    title: "Wtf!!! Con nào đây :)))))))))",
+                    desc: "Hình hiếm nè"
                 },
                 {
                     fileName: "4.jpg",
-                    title: "Ảnh đơn đầu tiên",
-                    desc: "Vui lòng bỏ qua biểu thức bị ảnh hưởng bởi ánh sáng ..."
+                    title: "Làm đồ ăn cho a nè",
+                    desc: "Chụp tấm đảm đang mà che mặt rùi :("
                 }, {
                     fileName: "5.jpg",
-                    title: "Trường hợp cà ri cà ri là",
-                    desc: "Rất sẵn sàng để làm con chuột của bạn, thời điểm này, muốn đóng băng lưới ~ ~"
+                    title: "Ngủ quên bị chụp úi giùi ui",
+                    desc: ""
                 }, {
                     fileName: "6.jpg",
                     title: "Hey, cái gì thế này?",
-                    desc: "Tôi sẽ không ngần ngại giới thiệu tình yêu của tôi với bạn, cho dù đó là một quan chức Đông vui vẻ, hay nhất của tình yêu đặc biệt."
+                    desc: ""
                 },
                 {
                     fileName: "7.jpg",
-                    title: "Sau khi leo trèo với Nanshan",
-                    desc: "Trong ngắn hạn, trong tương lai sẽ thường đưa bạn leo lên Nanshan, và cỏ nhỏ bắt nguồn từ Nanshan, tôi bắt rễ trong vòng một mét của bạn"
+                    title: "Hình đi chơi nè",
+                    desc: ""
                 },
                 {
                     fileName: "8.jpg",
-                    title: "Lần tiếp theo để bán Meng",
-                    desc: "Han Rong sinh viên, đừng quên bạn phải dạy tôi bán Meng dạy tôi tự hẹn giờ~(￣▽￣)~"
+                    title: "Lén nắm tay anh nèeee",
+                    desc: "Ghê thiệt ~(￣▽￣)~"
                 },
                 {
                     fileName: "9.jpg",
-                    title: "Mua sắm có thể tìm thấy tôi",
-                    desc: "Mặc dù thành phố đã vô tình cô đơn và nhầm lẫn tấn công, nhưng giao lộ tiếp theo là không gặp tôi?(╯▽╰)╭"
+                    title: "Lần đầu được a mua trà sữa cho ~(￣▽￣)~",
+                    desc: "(╯▽╰)╭"
                 },
                 {
                     fileName: "10.jpg",
-                    title: "Quả bóng trước người phụ nữ",
-                    desc: "Sẵn sàng đi cùng với bạn để làm tất cả những gì chúng tôi muốn, với bạn, những hoạt động này là đơn giản và thân mật."
+                    title: "Đòi đi ăn kem với anh, em bao (╯▽╰)╭",
+                    desc: "Đòi chụp tấm có 2 người mà vẫn k đàng hoàng được :("
                 },
                 {
                     fileName: "11.jpg",
-                    title: "Đối tác phía trước",
-                    desc: "Mỗi đoạn của đường, ở cuối có vẻ thích hợp, đặc biệt là với những người bạn của bạn."
+                    title: "Đi quân sự nhát ma a, đang trong toilet cũng k tha",
+                    desc: ""
                 }
             ]
     },
