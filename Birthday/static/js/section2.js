@@ -6914,13 +6914,13 @@
         e.exports = n.p + "static/media/1.b0776cac.jpg"
     },
     function(e, t, n) {
-        e.exports = n.p + "static/media/10.903aae48.jpg"
+        e.exports = n.p + "static/media/10.903aae48.jpeg"
     },
     function(e, t, n) {
         e.exports = n.p + "static/media/11.c3635477.jpeg"
     },
     function(e, t, n) {
-        e.exports = n.p + "static/media/2.863ca412.jpeg"
+        e.exports = n.p + "static/media/2.863ca412.jpg"
     },
     function(e, t, n) {
         e.exports = n.p + "static/media/3.6b1a0e23.jpeg"
