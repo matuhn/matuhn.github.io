@@ -371,3 +371,30 @@ https://web1.ctfsecurinets.com/default?formula=a2hvYWRlcHRyYWk=&values[khoadeptr
 
 OK mình đã đúng , việc còn lại là Ctrl + F thôi 
 Flag : `Securinets{T00_Ea5y_T0_U5e_This_Local_variable}`
+
+# LOST FLAG (FORENSIC)
+
+[Link](https://web8.ctfsecurinets.com/)
+
+Bài này là forensic, nên khi thấy cái khung login mình cũng chả muốn thử sqli hay gì gì hết, mình tìm vòng vòng thì chả có gì đặc biệt ở source của nó. Mình quăng vào `dirsearch` thì tìm dc link này :
+```
+https://web8.ctfsecurinets.com/.bzr/README/
+```
+
+cái này thì đặc biệt thiệt, nên mình đem đi google luôn thì tìm được cái write up này [link](https://rawsec.ml/en/STEM-CTF-2019-write-ups/#150-my-first-blog-web)
+
+Đại loại thì `DVCS` là mô hình quản lí phiên bản phân tán, người dev nào cũng sẽ clone cái repository của mình xong rồi chỉnh sửa mọi thứ rồi mới commit lên 1 cái nơi chứa mã nguồn (đại loại như Github, để tránh mất mát dữ liệu khi dev trực tiếp). Còn bài này thì xài bazzar. 
+
+Mình dùng [dvcs-ripper](https://inventory.rawsec.ml/tools.html#dvcs-ripper) để dump hết repository của bài này ra 
+```
+# dump toàn bộ repository
+$ ./rip-bzr.pl -v -u https://web8.ctfsecurinets.com/.bzr/ 
+# check xem có những gì đã thay đổi, file nào bị xóa, thêm vào 
+$ bzr log
+# revert lại file cũ ở commit 1
+$ bzr revert -r1
+```
+
+Kết quả thì mình sẽ có file `flag.php`
+Flag : `Securinets{BzzzzzzzzZzzzzzzzzzZrR_roCk$}`
+
