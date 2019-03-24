@@ -190,3 +190,12 @@ Payload:
 ```
 
 Flag : `Securinets{Xxe_xXE_@Ll_Th3_W@Y}`
+
+# EZ (MISC)
+[pic.png](https://drive.google.com/open?id=1H8PZgWhNaAfbpgLHmtvSr-0bw_dmKYUF)
+
+Sử dụng đại 1 tool nào để đọc hidden text 
+Mình sử dụng [steganography](https://matuhn.github.io/steganography/)
+Sẽ nhận được 1 đoạn hidden text, có chủ đề về Sherlock Holmes, có 1 từ bị delete khỏi văn bản nên mình dùng cái E-Book này xem từ đó là từ gì [Link](https://books.google.com.vn/books?id=2cMyBcuKQy4C&pg=PA93&lpg=PA93&dq=%22The+fact+is+that+upon+his+entrance+I+had+instantly+recognized+the+extreme+personal+danger+in+which+I+lay.+The+only+conceivable+escape+for+him+lay+in+silencing+my+tongue.+In+an+instant+I+had+slipped+the+revolver+from+the+drawer+into+my+pocket+and+was+covering+him+through+the+cloth.+At+his+remark+I+drew+the+weapon+out+and+laid+it+cocked+upon+the+table.+He+still+smiled+and+blinked,+but+there+was+something+about+his+eyes+which+made+me+feel+very+glad+that+I+had+it+there,+%22You+evidently+don%27t+know+me,%27+said+he.+%22%27On+the+contrary,%27+I+answered,+%27I+think+it+is+fairly+evident+that+I+do.+Pray+take+a+chair.+I+can+spare+you+five+minutes+if+you+have+anything+to+say.%27+%22%27All+that+I+have+to+say+has+already+crossed+your+mind,%27+said+he.+%22%27Then+possibly+my+answer+has+crossed+yours,%27+I+replied.+%22%27You+stand+fast?%27+%22%27Absolutely.%27+%22He+clapped+his+hand+into+his+pocket,+and+I+raised+the+pistol+from+the+table.+But+he+merely+drew+out+a+%3CDETELED_WORD%3E+in+which+he+had+scribbled+some+dates.+%22You+crossed+my+path+on+the+fourth+of+January,%27+said+he.+%27On+the+twenty-third+you+incommoded+me;+by+the+middle+of+February+I+was+seriously+inconvenienced+by+you;+at+the+end+of+March+I+was+absolutely+hampered+in+my+plans;+and+now,+at+the+close+of+April,+I+find+myself+placed+in+such+a+position+through+your+continual+persecution+that+I+am+in+positive+danger+of+losing+my+liberty.+The+situation+is+becoming+an+impossible+one.%27+%22%27Have+you+any+suggestion+to+make?%27+I+asked.+%22%27You+must+drop+it,+Mr.+Holmes,%27+said+he,+swaying+his+face+about.+%27You+really+must,+you+know.%27%22&source=bl&ots=_4yJ48IH35&sig=ACfU3U0IaC09mRmo84TqnLRuz-_1qVz-vw&hl=vi&sa=X&ved=2ahUKEwjwnNmDh5rhAhVUUd4KHSRqC8UQ6AEwAXoECAkQAQ#v=onepage&q=n%20which%20he%20had%20scribbled%20some&f=false) 
+
+Flag : `Securinets{b47f0d2a8866a75696f94a515d0cdf54c7ea3174}`
