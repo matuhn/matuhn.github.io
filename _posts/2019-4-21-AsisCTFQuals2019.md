@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: CONFidence CTF 2019 Teaser
+title: ASIS CTF Quals 2019
 categories: ['2019']
 ---
 Chắc cũng cả tháng rồi chưa chơi CTF, lo bận ăn hành của mấy anh ở chỗ làm mới, nay mới có dịp chơi lại. 
