@@ -4,9 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Feeder chủ lực của f1a
-
 Dự bị chiến lược của z3r0_n1ght
+
 
 
 ### More Information
