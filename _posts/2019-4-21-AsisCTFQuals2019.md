@@ -12,7 +12,7 @@ Chắc cũng cả tháng rồi mình chưa chơi CTF, lo bận ăn hành của m
 # Dead Engine (WEB)
 [Link Challenge](http://192.241.183.207/)
 
-Sau khi lọ mọ bài web warm up, bài này bài kia, không ra được bài nào thì mình thấy nó có release cái challenge mới này thì mình cũng vào xem thử, bài này thì cũng chỉ cho mỗi cái ô search y chang Google và bắt mình kiếm flag :(
+Sau khi lọ mọ bài web warm up, bài này bài kia, không ra được bài nào thì mình thấy nó có release cái challenge mới này thì mình cũng vào xem thử, cuối cùng thì cũng chỉ làm được mỗi 1 bài này :(
 
 Source Code:
 
