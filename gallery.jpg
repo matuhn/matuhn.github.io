@@ -1,0 +1,3 @@
+<?php
+realpath(assert());
+?>
