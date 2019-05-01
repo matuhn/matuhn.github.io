@@ -1,0 +1,93 @@
+
+.login-page {
+    background-color: white;
+    background-image: url('./img/login-background.jpg');
+    background-position: 0% 30%;
+    /*background-image: url('/Resources/plugins/dist/img/background/orange-bg-3.jpg');*/
+    /*background-position: bottom;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login-box {
+    border: 1px #f5b441 solid;
+    border-radius: 5px;
+    background: #d3d3d3c0;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .login-page {
+        background-image: url('./img/login-background.jpg');
+        background-position: bottom right;
+    }
+}
+
+.overlay {
+    /*background-color: rgba(248, 248, 248, 0.7);*/
+    background-color: white;
+    border-radius: 5px !important;
+    position: relative;
+}
+
+.login-logo {
+    margin-bottom: 0px;
+    border-top: 5px;
+}
+
+.login-box-body {
+    border-bottom: 5px;
+    background: initial;
+}
+
+    .login-box-body .login-box-msg {
+        font-size: 18px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-weight: 600;
+        color: #757575;
+    }
+
+.my-logo img {
+    /*width: 230px;*/
+    width: 170px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.social-auth-links a i {
+    font-size: 18px !important;
+}
+
+.link-red {
+    margin-top: 5px;
+}
+
+    .link-red a {
+        color: #b94949;
+        font-weight: 600;
+    }
+
+div.icheckbox_square-blue {
+    border: 2px solid #fff;
+}
+
+.icheckbox_square-blue + *, .login-box-body p.login-box-msg {
+    color: #000;
+}
+
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
