@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Dự bị chiến lược của z3r0_n1ght
+Lính đánh thuê của z3r0_n1ght
 
 
 
