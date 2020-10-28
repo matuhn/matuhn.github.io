@@ -4,13 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Lính đánh thuê của z3r0_n1ght
-
+Zalo Security Team (VNG Corp)
 
 
 ### More Information
 
-Mình mới tập chơi CTF mảng web và forensic mong mọi người chỉ bảo thêm
+Solo Yasuo (Ig: bui xuan huan)
 
 ### Contact me
 
