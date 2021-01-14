@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Zalo Security Team (VNG Corp)
-
 
 ### More Information
 
