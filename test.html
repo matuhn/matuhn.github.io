@@ -1,9 +1,9 @@
 <p id="x">
 <script>
-	const cont = window.location.search.substring(10);
-	const regex = "(?:https?:\/\/[a-z.]*zavi.me\/join\?id=\d+\&token=\w+\b)";
+	const param = new URLSearchParams(location.search);
+	const cont = param.get("cont");
 
-	if (/(?:https?:\/\/[a-z.]*zavi.me\/join\?id=\d+\&token=\w+\b)/.test(cont))
+	if (/(?:https?:\/\/[a-z.]*zavi.me\/join\?id=\d+\b)/.test(cont))
 		window.location = cont;
 	else
 		document.getElementById("x").innerHTML = `${cont} is invalid regex`;
