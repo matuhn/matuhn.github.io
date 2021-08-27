@@ -1,4 +1,4 @@
-<p id="x">
+<a id="x" href="#">This link</a> is not an valid link
 <script>
 	const param = new URLSearchParams(location.search);
 	const cont = param.get("cont");
@@ -6,6 +6,6 @@
 	if (/(?:https?:\/\/[a-z.]*zavi.me\/join\?id=\d+\b)/.test(cont))
 		window.location = cont;
 	else
-		document.getElementById("x").innerHTML = `${cont} is invalid regex`;
+		document.getElementById("x").href = cont;
 </script>
 
