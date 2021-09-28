@@ -7,7 +7,6 @@ permalink: /about/
 
 ### More Information
 
-Solo Yasuo (Ig: bui xuan huan)
 
 ### Contact me
 
