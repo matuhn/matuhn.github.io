@@ -60,7 +60,7 @@ def multi_thread():
 				pass
 			else:
 				for i in files:
-					url = "http://localhost:8012/question_secret_path_for_admin127637162uyqweudbUWEYQWUIE6843586093uqwyeuqwyeu_khoabdapromax?q=" + i 
+					url = "http://localhost:8012/check?q=" + i 
 					print(url)
 					threads.append(executor.submit(botcheck, url, i))
 					print("[+] Done")
