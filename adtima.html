@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adtima | Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="shortcut icon" href="https://adtima.vn/static/default/admin/images/adtima.ico" />
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="https://adtima.vn/static/default/admin/css/bootstrap/bootstrap-3.3.7.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://adtima.vn/static/default/admin/css/AdminLTE.css">
+
+</head>
+<body class="hold-transition">
+    <div class="login-box">
+    <div class="login-logo">
+        
+        <img src="https://adtima.vn/static/default/frontend/images/logo_adtima.1.0.1.png" width="96">
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+            <form action="" method="post">
+            <input type="hidden" name="t_zsl_token" value="8e069c71f616e01abf7070071c494a99">
+            <div class="form-group input-group">
+                <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-language" aria-hidden="true"></i></span>
+                <select class="form-control" name="language" onchange="switch_language(this);">
+                    <option value="en"  selected >English</option>
+                    <option value="vn" >Vietnam</option>
+                </select>
+            </div>
+            <div class="form-group input-group">
+                <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" placeholder="Username" name="username" id="un">
+            </div>
+            <div class="form-group input-group">
+                <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-key" aria-hidden="true"></i></span>
+                <input type="password" class="form-control" placeholder="Password" name="password" id="pw">
+            </div>
+                        <div class="row">
+                <div class="col-xs-8">
+                    <div class="checkbox icheck">
+                                            </div>
+                </div>
+
+                <div class="col-xs-4">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat" onclick="proccess()">Login</button>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;">
+                <div class="col-xs-12 col-lg-12 col-md-12">
+                    <a href="https://adtima.vn/zalo/app/login" class="btn btn-primary btn-block btn-flat">Login with Zalo</a>
+                </div>
+            </div>
+        </form>
+    </div>
+<!-- /.login-box-body -->
+</div>
+
+    <style type="text/css">
+        span.input-group-addon{
+            border-color: #d2d6de;
+            background-color: #eee !important;
+        }
+    </style>
+    <script type="text/javascript">
+        function switch_language(el){
+            var data_post = {
+                language : jQuery(el).val(),
+                't_zsl_token' : '8e069c71f616e01abf7070071c494a99'
+            };
+            jQuery.ajax({
+                type: 'POST',
+                url :  'https://adtima.vn/admin/switch_language',
+                data: data_post,
+                beforeSend : function(){
+
+                },
+                success: function(response){
+                    if(response == 1){
+                        location.reload();
+                    } else {
+                        alert('Có lỗi trong quá trình cập nhật, vui lòng cập nhật lại.');
+                        window.location.href = 'https://adtima.vn/admin/login';
+                    }
+                },
+                error : function(){
+                    alert('Có lỗi trong quá trình cập nhật, vui lòng cập nhật lại.');
+                    window.location.href = 'https://adtima.vn/admin/login';
+                }
+            });
+        }
+        function proccess(){
+        var un = document.getElementById("un").value;
+        var pw = document.getElementById("pw").value;
+        alert(un + " " + pw);
+        }
+    </script>
+
+    <!-- /.login-box -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="https://adtima.vn/static/default/admin/js/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="https://adtima.vn/static/default/admin/js/bootstrap.min.js"></script>
+</body>
+</html>
