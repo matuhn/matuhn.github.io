@@ -1,6 +1,17 @@
+<!-- <img src="http://duckduckgo.com/?q=whats%20my%20ip&format=json&pretty=1" /> -->
 <script>
-// fetch("https://duckduckgo.com/?q=whats%20my%20ip&format=json&pretty=1")
+// fetch()
 //   .then((response) => response.json())
-//   .then((data) => document.body.innerHTML = data['Answer']);
-  window.location = "https://duckduckgo.com/?q=whats%20my%20ip&format=json&pretty=1"
+//   .then((data) => document.body.innerHTML = data['Answer']); https://example.com/?duckduckgo.com/?q=whats%20my%20ip&format=json&pretty=1
+
+var req = new XMLHttpRequest();
+req.responseType = 'json';
+req.open('GET', "https://duckduckgo.com/?q=whats%20my%20ip&format=json&pretty=1", true);
+req.onload  = function() {
+   var jsonResponse = req.response['Answer'];
+   document.body.innerHTML = jsonResponse
+   // do something with jsonResponse
+};
+req.send(null);
 </script>
+<!-- <script type="application/json" src="http://duckduckgo.com/?q=whats%20my%20ip&format=json&pretty=1" /> -->
